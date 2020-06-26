@@ -1,0 +1,1245 @@
+body{
+    font-family: 'Muli', sans-serif;
+    background-color: #17191C;
+}
+.body{
+    
+    background-color: #17191C;
+    width: 100%;
+    height: 100%;
+
+  
+}
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    
+    background:linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+    outline: 1px solid slategrey;
+    border-radius: 16px ;
+  }
+
+
+@keyframes anim1{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.MainText{
+    
+    text-align: center;
+    height: 103px;
+    
+    
+
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 144px;
+    line-height: 181px;
+    letter-spacing: -0.01em;
+
+    color: #D6E1EF;
+
+}
+.boxStart{
+    
+    /*transform-origin: 100% 0%;
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-fill-mode: both;*/
+    
+    position: absolute;
+    align-self: center;
+    width: 356px;
+    left: 38%;
+    display: flex;
+    align-items: center;
+
+    height: 98px;
+    
+    top: 76%;
+    background: linear-gradient(168.71deg, #32383E -69.07%, #17191C 122.22%);
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+    border-radius: 16px;
+    border: none;
+
+    text-align: center;
+    color: #D6E1EF;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 100%;
+    text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+
+
+
+}
+.StartText{
+    text-align: center;
+    padding-top: 15%;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 100%;
+    /* identical to box height, or 50px */
+
+    
+    
+    
+
+    color: #D6E1EF;
+}
+@keyframes anim1{
+    100%{
+        transform: scale(1);
+    }
+    0%{
+        transform: scale(0);
+    }
+}
+.NotifyText{
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    left: 2%;
+    ;
+
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 100px;
+    letter-spacing: -0.01em;
+
+    color: #D6E1EF;
+
+}
+*:focus {outline:none}
+.boxStart:hover{
+    background: linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+    color: rgb(154, 159, 167)
+}
+
+.boxWoman{
+    position: absolute;
+    width: 356px;
+    height: 98px;
+    left: 15%;
+    top: 80%;
+    border: none;
+
+    text-align: center;
+    color: #D6E1EF;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 100%;
+    
+    text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+
+
+    background: linear-gradient(168.71deg, #32383E -69.07%, #17191C 122.22%);
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+    border-radius: 16px;
+}
+.boxWoman:hover{
+    background: linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+    color: rgb(154, 159, 167)
+}
+
+.boxMan{
+    position: absolute;
+    width: 356px;
+    height: 98px;
+    left: 60%;
+    top: 80%;
+    border: none;
+
+    text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+
+
+    text-align: center;
+    color: #D6E1EF;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 100%;
+    
+
+    background: linear-gradient(168.71deg, #32383E -69.07%, #17191C 122.22%);
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+    border-radius: 16px;
+}
+.boxMan:hover{
+    background: linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+    color: rgb(154, 159, 167)
+}
+
+.PhotoFrame{
+    position: absolute;
+    z-index: 1000;
+    width: 600px;
+    right: 10px;
+    height: 600px;
+    
+    top: 50px;
+    
+
+    background: linear-gradient(139.08deg, #353A40 10.44%, #121416 95.94%);
+    box-shadow: -8px -16px 56px rgba(232, 237, 243, 0.08), 52px 20px 88px rgba(2, 3, 3, 0.5), inset -16px -6px 80px rgba(248, 249, 249, 0.03);
+    border-radius: 500px;
+}
+
+.AskQuestion{
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    left: 3%;
+    
+
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 100px;
+    letter-spacing: -0.01em;
+
+    color: #D6E1EF;
+
+}
+.ImageUpload{
+    
+    width: 356px;
+    height: 98px;
+    margin:50px auto 0 auto;
+    display:block;
+    border: none;
+    margin-top: 40%;
+    
+    
+
+    text-align: center;
+    color: #D6E1EF;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 100%;
+    
+
+    background: linear-gradient(168.71deg, #32383E -69.07%, #17191C 122.22%);
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+    border-radius: 16px;
+}
+.textinbtn{
+    text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+
+
+    text-align: center;
+    color: #D6E1EF;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 100%;
+}
+
+
+
+
+
+.ImageUpload:hover{
+    background: linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+    color: rgb(154, 159, 167)
+}
+.Reason{
+    position: absolute;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 63px;
+    letter-spacing: -0.01em;
+
+    top: 15%;
+    left: 18%;
+
+    color: #D6E1EF;
+}
+
+.InstUrl 
+{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    border: none;
+    top: 65%;
+    left: 5%;
+    padding-left: 1%;
+    background: linear-gradient(173.85deg, #32383E -69.07%, #17191C 122.22%);
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+    border-radius: 16px;
+    color: #D6E1EF;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 63px;
+    letter-spacing: -0.01em;
+}
+
+.StartLoad{
+    
+    /*transform-origin: 0% 100%;
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-fill-mode: both;*/
+    
+    position: absolute;
+    
+    width: 356px;
+    left: 10%;
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+
+
+    height: 98px;
+    
+    top: 80%;
+    background: linear-gradient(168.71deg, #32383E -69.07%, #17191C 122.22%);
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+    border-radius: 16px;
+    border: none;
+
+    text-align: center;
+    color: #D6E1EF;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 100%;
+    
+
+
+
+}
+.StartLoad:hover{
+    background: linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+    color: rgb(154, 159, 167)
+}
+.errorMessage{
+    position: absolute;
+    width: 320px;
+    height: 49px;
+    left: 40%;
+    top: 80%;
+
+    background:  linear-gradient(173.66deg, #F79F9F -69.07%, #A2200E 79.85%);
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+    border-radius: 16px;
+
+    text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+
+
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 100%;
+    /* identical to box height, or 50px */
+
+   
+    align-items: center;
+    letter-spacing: 0.02em;
+    padding-left: 25px;
+
+    color: #D6E1EF;
+    display: none;
+
+}
+
+.Radio1{
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 15px;
+    right: 0;
+    bottom: 0;
+    left: 26%;
+    height: 50px;
+    width: 50px;
+    transition: all 0.15s ease-out 0s;
+    
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+    background: linear-gradient(144.05deg, #32383E -69.07%, #17191C 122.22%);
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+    border-radius: 16px;
+}
+
+.Radio1:hover{
+    background: linear-gradient(144.05deg, #000000 -69.07%, #555B61 122.22%);
+}
+.Radio1:checked{
+    background: linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+}
+
+.Radio2{
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 15px;
+    right: 0;
+    bottom: 0;
+    left: 20%;
+    height: 50px;
+    width: 50px;
+    transition: all 0.15s ease-out 0s;
+    
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+    background: linear-gradient(144.05deg, #32383E -69.07%, #17191C 122.22%);
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+    border-radius: 16px;
+}
+
+.Radio2:hover{
+    background: linear-gradient(144.05deg, #000000 -69.07%, #555B61 122.22%);
+}
+.Radio2:checked{
+    background: linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+}
+
+.Radio3{
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 15px;
+    right: 0;
+    bottom: 0;
+    left: 25%;
+    height: 50px;
+    width: 50px;
+    transition: all 0.15s ease-out 0s;
+    
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+    background: linear-gradient(144.05deg, #32383E -69.07%, #17191C 122.22%);
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+    border-radius: 16px;
+}
+
+.Radio3:hover{
+    background: linear-gradient(144.05deg, #000000 -69.07%, #555B61 122.22%);
+}
+.Radio3:checked{
+    background:linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+}
+
+.FrameNew{
+    position: absolute;
+    width: 600px;
+    right: 10px;
+    height: 600px;
+    display: none;
+    top: 50px;
+    z-index: 1000;
+    
+    background: linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+    box-shadow: -8px -16px 56px rgba(232, 237, 243, 0.08), 52px 20px 88px rgba(2, 3, 3, 0.5), inset -16px -6px 80px rgba(248, 249, 249, 0.03);
+    border-radius: 500px;
+}
+.SI{
+    position: absolute;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 181px;
+    letter-spacing: -0.01em;
+    right: 10%;
+    top: 30%;
+
+    color: #D6E1EF;
+}
+
+.imgmap{
+    position: absolute;
+    padding-left: 21%;
+    padding-top: 5%;
+    height: 80%;
+    width: 57%;
+}
+
+.skipbox{
+    position: fixed;
+    width: 406px;
+    height: 350px;
+    left: 80%;
+    top: 70%;
+    
+    border: none;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    padding: 1%;
+    color: #D6E1EF ;
+    background: linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+    border-radius: 360px 0px 0px 0px;
+}
+.skipbox:hover{
+    background: linear-gradient(173.66deg, #57BD47 -69.07%, #175861 79.85%);
+}
+
+.imgmap1{
+    position: absolute;
+    padding-left: 21%;
+    padding-top: 5%;
+    height: 80%;
+    width: 70%;
+}
+
+.mapText{
+    font-family: Muli;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    padding-left: 35%;
+    line-height: 100%;
+    /* identical to box height, or 50px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    color: #D6E1EF;
+
+}
+.btnNext{
+    position: absolute;
+    
+    width: 200px;
+    left: 84%;
+    display: none;
+    
+    text-align: center;
+   
+    vertical-align:middle;
+
+
+    height: 54px;
+    
+    
+    top: 87%;
+    background: linear-gradient(168.71deg, #32383E -69.07%, #17191C 122.22%);
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+    border-radius: 16px;
+    border: none;
+
+    
+    
+
+    
+    color: #D6E1EF;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 100%;
+    
+}
+
+.btnNext:hover{
+    background: linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+    color: rgb(154, 159, 167)
+}
+.YouTubeVideo{
+    display: none;
+    align-self: center;
+    margin: auto;
+    
+    padding-top: 0.3%;
+
+}
+.map {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale();
+    -o-filter: grayscale();
+     filter: grayscale(50%);
+     border: none;
+     display: none;
+    
+     width: 90%;
+     height: 500px;
+     padding-left: 14%;
+     padding-top: 1%;
+
+}
+
+.PriceText{
+    color: #D6E1EF;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 100%;
+    padding-top: 7%;
+    padding-left: 6%;
+    
+}
+
+.imgmap:hover{
+  transform: rotate (100deg);
+}
+
+.StructureText{
+    color: #D6E1EF;
+    padding-right: 70%;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 160%;
+    padding-top: 1%;
+    position: absolute;
+    padding-left: 3%;
+}
+
+
+
+.boxDelivery{
+    
+    
+    display: none ;
+    position: absolute;
+    
+    width: 356px;
+    left: 41%;
+    
+    align-items: center;
+
+    height: 98px;
+    
+    top: 76%;
+    background: linear-gradient(168.71deg, #32383E -69.07%, #17191C 122.22%);
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+    border-radius: 16px;
+    border: none;
+
+    text-align: center;
+    color: #D6E1EF;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 100%;
+    text-align: center;
+
+    vertical-align:middle;
+
+
+
+}
+.boxDelivery:hover{
+    background: linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+    color: rgb(154, 159, 167)
+};
+
+.msg{
+
+    position: absolute;
+    width: 320px;
+    height: 200px;
+    left: 10%;
+    top: 80%;
+
+    background:  linear-gradient(173.66deg, #F79F9F -69.07%, #A2200E 79.85%);
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+    border-radius: 16px;
+
+    text-align: center;
+    
+    vertical-align:middle;
+
+
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 100%;
+    /* identical to box height, or 50px */
+
+   
+    align-items: center;
+    letter-spacing: 0.02em;
+    padding-left: 50px;
+
+    color: #D6E1EF;
+    
+
+
+}
+
+.WIPT{
+    text-align: center;
+    height: 103px;
+    padding-bottom: 25% ;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 100px;
+    letter-spacing: -0.01em;
+
+    color: #D6E1EF;
+
+}
+
+.WIPT1{
+    
+    height: 103px;
+    padding-bottom: 5% ;
+    padding-top: 4%;
+    
+    padding-right: 5%;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 100px;
+    letter-spacing: -0.01em;
+
+    color: #D6E1EF;
+
+}
+
+.buttonDown{
+    width: 100px;
+    right: 10px;
+    height: 100px;
+    position: fixed;
+    
+    z-index: 1000;
+    border-radius: 500px;
+    background: linear-gradient(168.71deg, #32383E -69.07%, #17191C 122.22%);
+    border: none;
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+}
+
+.howT{
+    text-align: center;
+    height: 103px;
+    
+    
+    padding-top: 23%;
+    padding-bottom: 5%;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 118px;
+    line-height: 181px;
+    letter-spacing: -0.01em;
+
+    color: #D6E1EF;
+}
+
+.howT5{
+    text-align: center;
+    height: 103px;
+    
+    
+    
+    
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 118px;
+    line-height: 181px;
+    letter-spacing: -0.01em;
+
+    color: #D6E1EF;
+}
+
+.howTApp{
+    text-align: center;
+    height: 103px;
+    
+    
+    padding-top: 10%;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 100px;
+    letter-spacing: -0.01em;
+
+    color: #D6E1EF;
+}
+
+
+
+.howTApp1{
+    text-align: center;
+    height: 103px;
+    
+    
+    padding-top: 2%;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 100px;
+    letter-spacing: -0.01em;
+
+    color: #D6E1EF;
+}
+
+.howTApp0{
+    text-align: center;
+    height: 103px;
+    
+    
+    padding-top: 15%;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 100px;
+    letter-spacing: -0.01em;
+
+    color: #D6E1EF;
+}
+
+.howTApp3{
+    text-align: center;
+    height: 103px;
+    
+    
+    padding-top: 20%;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 144px;
+    line-height: 100px;
+    letter-spacing: -0.01em;
+
+    color: #D6E1EF;
+}
+.End{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+}
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Set a background color */
+  body {
+    
+    font-family: Helvetica, sans-serif;
+    color: #D6E1EF;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20%;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 50px;
+    position: relative;
+    background-color: linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid white;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .container.right:hover:after{
+    content: '';
+    background-color:linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+  }
+
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background: linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+.howTApp10{
+    text-align: center;
+    height: 103px;
+    
+    padding-bottom: 20%;
+    padding-top: 20%;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 122px;
+    line-height: 100px;
+    letter-spacing: -0.01em;
+
+    color: #D6E1EF;
+}
+
+.howTApp4{
+    text-align: center;
+    height: 103px;
+    
+    
+    padding-top: 10%;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 100px;
+    letter-spacing: -0.01em;
+
+    color: #D6E1EF;
+}
+.imageus{
+    
+    width: 260px;
+    height: 290px;
+    border-radius: 360px;
+    margin: auto;
+    margin-top: 15%; 
+     
+    
+ 
+    
+};
+.buttonDown{
+    
+    width: 100px;
+    right: 10px;
+    height: 100px;
+    
+    position: absolute;
+    margin-top: 10%;
+    padding-top: 50%;
+    top: 10%;
+    
+    z-index: 1000;
+    border-radius: 500px;
+    background: linear-gradient(168.71deg, #32383E -69.07%, #17191C 122.22%);
+    border: none;
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+}
+
+
+
+  
+  .progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+    left: 35%;
+    margin-top: 15%;
+  }
+  
+  .progress-value {
+    /*animation: load 3s normal forwards;*/
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+  }
+  
+html {
+    scroll-behavior: smooth;
+}
+
+
+  @keyframes load1 {
+    0% { width: 0; }
+    100% { width: 25%; }
+  }
+  @keyframes load2 {
+    0% { width: 25%; }
+    100% { width: 50%; }
+  }
+  @keyframes load3 {
+    0% { width: 50%; }
+    100% { width: 75%; }
+  }
+  @keyframes load4 {
+    0% { width: 75%; }
+    100% { width: 100%; }
+  }
+
+
+
+.feedback {
+    background: linear-gradient(168.71deg, #32383E -69.07%, #17191C 122.22%);
+    border: none;
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5), -4px -2px 16px rgba(195, 200, 205, 0.08);
+    padding: 10px 20px;
+    
+    border-radius: 500px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  #mybutton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+  }
+
+.arrow-down {
+    box-sizing: border-box;
+    height: 3vw;
+    width: 3vw;
+    margin-top: -20%;
+    margin-left: 27%;
+    border-style: solid;
+    border-color: #D6E1EF;
+    border-width: 0px 7px 7px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+  }
+.arrow-next {
+    box-sizing: border-box;
+    height: 300vw;
+    width: 3vw;
+    position: absolute;
+    right: 9%;
+    transform: rotate(-45deg);
+    border-style: solid;
+    border-color: #D6E1EF;
+    border-width: 0px 7px 7px 0px;
+    
+    transition: border-width 150ms ease-in-out;
+  }
+
+
+.arrow-down:hover{
+    border-width: 0px 10px 10px 0px;
+}
+
+.arrow-next:hover{
+  border-width: 0px 10px 10px 0px;
+}
+
+.feedback:hover{
+    background: linear-gradient(173.66deg, #72F75D -69.07%, #0C6C79 79.85%);
+}
+
+
+
+
+
+.BadCamera{
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    left: 10%;
+    
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 100px;
+    letter-spacing: -0.01em;
+
+    color: #D6E1EF;
+}
+.boxphoto{
+    
+    width: 100%;
+    height: 350;
+    display: inline;
+}
+ 

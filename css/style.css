@@ -1,0 +1,345 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: Montserrat;
+  
+  
+}
+h3{
+  font-style: bold;
+ 
+  font-weight: 900;
+  
+}
+p{
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  
+}
+
+/*--------*/
+/*Кнопка смены темы*/
+button {
+  background-color: black;
+}
+
+svg {
+  animation: grow 3s;
+}
+
+.overlay {
+  fill: rgba(36, 36, 36, 0.01);
+}
+
+.overlay:hover {
+  fill: rgba(36, 36, 36, 0.4);
+}
+
+.circlegr {
+  transform-box: fill-box;
+  transform-origin: center;
+  /*animation: decrease 3s linear 3s;*/
+}
+
+.theme {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  z-index: 1000;
+}
+
+@keyframes grow {
+  100% {
+    transform: scale(1);
+  }
+  0% {
+    transform: scale(0);
+  }
+}
+@keyframes decrease {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+/*--------*/
+body {
+  font-size: 20pt;
+  background: #000000;
+  padding: 0px;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  /*background: radial-gradient(#ffffff, #ffffff00);*/
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(173.66deg, #7c7c7c -69.07%, #202020 79.85%);
+  border-radius: 16px;
+}
+
+.balderback {
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+}
+.balderback video {
+  height: 100%;
+  width: 100%;
+}
+
+.video_background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -4;
+}
+.video_background video {
+  height: 100%;
+  width: 100%;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+}
+.parent .block {
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 100vh;
+}
+
+.balder_is_CSF {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+}
+.balder_is_CSF div {
+  height: 100vh;
+}
+.balder_is_CSF div video {
+  height: 100vh;
+}
+
+.how_to {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr repeat(2, 7fr);
+}
+.how_to .kak {
+  grid-area: 1/1/2/3;
+}
+.how_to .vid1 {
+  grid-area: 2/1/3/2;
+}
+.how_to .txt1 {
+  grid-area: 2/2/3/3;
+}
+.how_to .txt2 {
+  grid-area: 3/1/4/2;
+}
+.how_to .vid2 {
+  grid-area: 3/2/4/3;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.team div {
+  height: 100vh;
+}
+
+.text {
+  font-size: 40pt;
+  text-align: center;
+  align-items: center;
+  background: #000000;
+  color: #ffffff;
+  padding: 0px 5vh;
+}
+
+h3 {
+  text-align: center;
+  font-size: 50pt;
+  padding: 2vh;
+}
+
+p {
+  align-self: center;
+}
+
+video {
+  height: 100vh;
+}
+
+.parent {
+  width: 99.9vw;
+}
+.parent .balder {
+  width: 100vw;
+  margin-bottom: 0px;
+  text-align: center;
+  padding: 20vh 0 10vh 0;
+}
+.parent .balder img {
+  position: relative;
+  z-index: 5;
+  padding: 0px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+.parent .balder_is_CSF {
+  background: #000000;
+}
+.parent .balder_is_CSF .balderis {
+  height: 100vh;
+  width: 50vw;
+}
+.parent .balder_is_CSF .balderis video {
+  height: 100vh;
+  width: 50vw;
+}
+.parent .balder_is_CSF .CSF {
+  height: 100vh;
+  width: 50vw;
+}
+.parent .balder_is_CSF .CSF video {
+  height: 100vh;
+  width: 50vw;
+}
+.parent .about_prj {
+  padding: 0px;
+}
+.parent .how_to {
+  height: 200vh;
+}
+.parent .how_to video {
+  height: 100vh;
+  width: 50vw;
+}
+.parent .ready {
+  padding: 0px 5vh;
+  justify-content: center;
+}
+.parent .team {
+  background: #000000;
+  height: 400vh;
+  align-content: center;
+}
+.parent .team__member {
+  background: #000000;
+}
+.parent .team__member__text {
+  padding: 10vh 5vh;
+  font-size: 60pt;
+}
+.parent .team__member video {
+  width: 50vw;
+}
+.parent .email {
+  margin-bottom: 0px;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  text-align: center;
+  
+}
+.parent .email__video {
+  position: absolute;
+  z-index: -1;
+  bottom: 0px;
+  left: 0px;
+}
+.parent .email__video video {
+  position: relative;
+  width: 99.9vw;
+  height: auto;
+  bottom: 0px;
+  margin: 0px auto;
+  z-index: -1;
+}
+.parent .email__text {
+  height: 700px;
+  width: 700px;
+  
+  margin: 0px auto;
+  position: initial;
+  font-size: 30px;
+  background: #000000;
+  border-radius: 600px;
+}

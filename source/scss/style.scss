@@ -1,0 +1,264 @@
+@import "nullstyle.scss";
+@import "button.scss";
+
+$fz: 20pt;
+$h: 100vh;
+$w1: 100vw;
+$w2: 50vw;
+
+
+body{
+    font-size: $fz;
+    background: #000000;
+    padding: 0px;
+    //overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+       
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        /*background: radial-gradient(#ffffff, #ffffff00);*/
+    }
+       
+    &::-webkit-scrollbar-thumb {
+        
+        background:linear-gradient(173.66deg, #7c7c7c -69.07%, #202020 79.85%);
+        
+        border-radius: 16px ;
+    }
+}
+.balderback{ 
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    video{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.video_background{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -4;
+    video{
+        height: 100%;
+        width: 100%;
+    }
+}
+//-----
+
+//Основная сетка 
+.parent {
+    display: flex;
+    flex-direction: column;
+    //width: 100vw;
+    .block{
+        height: 100vh;
+        width: 100vw;
+        margin-bottom: 100vh;
+    }
+}
+//-----
+
+//Balder is CSF
+.balder_is_CSF{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    //width: 100vw;
+    div{
+        height: 100vh;
+        //width: 50vw;
+        video{
+            height: 100vh;
+            //width: 50vw;
+        }
+    }
+}
+//-----
+
+//2x2 kak
+.how_to{
+    //width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr repeat(2,7fr);
+    div{
+        //width: $w2;
+    }
+    .kak { 
+        grid-area: 1 / 1 / 2 / 3;}
+    .vid1 { grid-area: 2 / 1 / 3 / 2;}
+    .txt1{ grid-area: 2 / 2 / 3 / 3;}
+    .txt2{ grid-area: 3 / 1 / 4 / 2;}
+    .vid2 { grid-area: 3 / 2 / 4 / 3;}
+}
+//-----
+
+//Team
+.team{
+    //width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    div{
+        height: $h;
+        //width: $w2;
+    }
+}
+//-----
+
+//Шаблоны
+.text{
+    font-size: 40pt;
+    text-align: center;
+    align-items: center;
+
+    background: #000000;
+    color: #ffffff;
+    padding: 0px 5vh;
+}
+h3{
+    text-align: center;
+    font-size: 50pt;
+    padding: 2vh;
+}
+p{
+    align-self: center;
+}
+video{
+    height: $h;
+    //width: $w2;
+}
+.block{
+    //width: $w1;
+}
+//-----
+
+//Иерархия
+.parent{
+    width:99.9vw;
+    
+    .balder{
+        width: 100vw;
+        margin-bottom: 0px;        
+        text-align: center;
+        padding: 20vh 0 10vh 0;
+        img{
+            position: relative;
+            z-index: 5;
+            padding: 0px;
+             
+            text-align: center;
+            justify-self: center;
+            align-self: center;
+        }
+        
+    }
+
+
+    .balder_is_CSF{
+        background: #000000;
+        .balderis{
+            height: $h;
+            width: $w2;
+            video{
+                height: $h;
+                width: $w2;
+            }
+        }
+        .CSF{
+            height: $h;
+            width: $w2;
+            video{
+                height: $h;
+                width: $w2;
+            }
+        }
+    }
+
+
+    .about_prj{
+        padding: 0px;
+
+    }
+    
+
+    .how_to{
+        height: 2*$h;
+        h3{
+            
+        }
+        video{
+            height: $h;
+            width: 50vw;
+        }
+    }
+
+    //Место для таймлайна
+
+    .ready{
+        padding: 0px 5vh;
+        justify-content: center;
+    }
+
+
+    .team{
+        background: #000000;
+        height: 4*$h;
+        align-content: center;
+        &__member{
+            &__text{
+                padding: 10vh 5vh;
+                font-size: 60pt;
+            }
+            background: #000000;
+            video{
+                width: $w2;
+            }
+        
+        }
+        
+    }
+    .email{
+        margin-bottom: 0px;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+
+        &__video{
+            position: absolute;
+            z-index: -1;
+            bottom: 0px;
+            left: 0px;
+            video{
+                position: relative;
+                width: 99.9vw;
+                height: auto;
+                bottom: 0px;
+                margin: 0px auto;
+                z-index: -1;
+            }
+        }
+        &__text{
+            height: 800px;
+            width: 800px;
+
+            padding: 400px 0;
+            margin: 0px auto;
+            position: absolute;
+            top: 5vh;
+            left: 30vw;
+
+            background: #000000;
+            border-radius: 400px;
+        }
+    }
+}
+//-----
+
+//@media 
