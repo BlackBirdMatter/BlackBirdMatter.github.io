@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Balder</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    </head>
+    <body id="text">
+      <!--Background-->
+      <div class="balderback"><video loop autoplay muted>
+        <source src="video/BlackBird.mp4" type="video/mp4"/>
+        </video>
+      </div>
+      <div class="video_background"><video loop autoplay muted>
+            <source src="video/Back60.mp4" type="video/mp4"/>
+            </video>
+      </div>
+      <div onclick="changeTheme()" class="theme">    
+        <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate"  viewBox="0 0 100 100" width="75px" height="75px">
+          <defs>
+            <clipPath id="_clipPath_E41exAe4q9Ag5uqDIZz4zZzfjZ3EFl0C"><rect width="100" height="100"/></clipPath>
+          </defs>
+            <g clip-path="url(#_clipPath_E41exAe4q9Ag5uqDIZz4zZzfjZ3EFl0C)">
+                <circle id="3" vector-effect="non-scaling-stroke" cx="50" cy="50" r="50" fill="rgb(36,36,36)"/>   
+                <path id="2" d=" M 23.147 70.186 C 12.977 55.489 16.752 34.512 31.572 23.37 C 46.392 12.229 66.682 15.116 76.853 29.814 C 87.023 44.511 83.248 65.488 68.428 76.63 C 53.608 87.771 33.318 84.884 23.147 70.186 Z " fill="rgb(255,255,255)"/>
+                <path class="circlegr" id="1" d=" M 44.211 58.745 C 35.991 46.6 38.243 29.868 49.238 21.403 C 60.232 12.939 75.831 15.926 84.051 28.071 C 92.271 40.216 90.018 56.948 79.024 65.412 C 68.03 73.877 52.431 70.889 44.211 58.745 Z " fill="rgb(36,36,36)"/>
+            </g>
+            <path id="4" style="display: none;" d=" M 18.699 76.053 C 4.948 59.296 7.81 34.018 25.086 19.639 C 42.361 5.26 67.551 7.19 81.301 23.947 C 95.052 40.704 92.19 65.982 74.914 80.361 C 57.639 94.74 32.449 92.81 18.699 76.053 Z " fill="rgb(242,206,64)" fill-opacity="0.44"/>       
+            <path id="4" style="display: none;" d=" M 22.612 72.796 C 10.58 58.134 13.084 36.015 28.2 23.434 C 43.316 10.852 65.357 12.542 77.388 27.204 C 89.42 41.866 86.916 63.985 71.8 76.566 C 56.684 89.148 34.643 87.458 22.612 72.796 Z " fill="rgb(242,206,64)" fill-opacity="0.42"/>
+            <circle onmouseover="overlayon()"  class="overlay"  vector-effect="non-scaling-stroke" cx="50" cy="50" r="50" />
+        </svg>
+      </div>
+      
+      <div class="parent">
+        <!--Logo--><!-- h=w=100% -->
+        <div class="balder block">
+          <img src="img/Balder.png" alt="???">
+        </div>
+        <!--Balder is CSF--><!--display: grid col=2 h=100% w=50% -->
+        <div class="balder_is_CSF block">
+          <div class="balderis"><video src="video/BalderIs.mp4" autoplay muted></video></div>
+          <div class="CSF"><video src="video/CSF.mp4" loop autoplay muted></video></div>
+        </div>
+        <!--О нас--><!-- h=w=100% -->
+        <div class="about_prj block text" id="about">
+          <h3 style="padding-top: 60px; padding-bottom: 60px;">О программе</h3> 
+          <p style="padding-right: 35px; padding-left: 35px;"> Наша программа делает поход в магазин как никогда простым. Она анализирует вашу внешность и выдает одежду котороая подходит вам по цене и внешнему виду.</p>
+        </div>
+        <!--Как использовать: в магазине, приложении-->
+        <div id="DHowToUse" style="" class="how_to block text">
+          <h3 id="THowToUse" class="kak" style="padding-top: 100px;" >Как использовать?</h3>
+          <!--В магазине-->
+        
+          <!--Видео магазин (слева)-->
+          <div class="in_shop__video vid1"><video loop autoplay muted>
+            <source src="video/Shop2.mp4" type='video/mp4' />
+            </video></div>
+          <!--Текст магазин (справа)-->
+          <div id="DHowToUse2" class="in_shop__text text txt1"><p style="font-size: 40px; padding:10px" id="THowToUse2">Вы подходите к терминалу, выбираете нужные опции, отходите на небольшое расстояние и он делает фотографирует Вас. После этого, мы подбираем наиболее подходящую для Вас и показываем как Ваш размер, так и места на карте магазина где находятся нужные Вам вещи.</p></div>
+        
+          <!--Видео приложение (справа)-->
+          <div class="in_app__video vid2"><video style="width: 100%;" loop autoplay muted> 
+            <source src="video/App2.mp4"  type='video/mp4' />
+            </video></div>
+          <!--Текст приложение (слева)-->
+          <div id="DHowToUse3" class="in_app__text text txt2"><p style="font-size: 40px; padding:10px; padding-bottom: 0% " id="THowToUse3" >Вы загружаете своё фото, мы подбираем одежду которая Вам нужна и показываем её на карте в ближайшем магазине правильного размера. Также вы сможете оформить доставку.</p></div>
+        </div>
+        <!--Timeline-->
+        
+        <!--Ready-->
+        <div class="ready block text" id="DReady" style="padding-top: 100px; padding-bottom: 100px;"><h3 id="TReady" >Что уже готово?</h3><br><p id="TReady2">Наша программа уже умеет определять цвет глаз, губ и волос. Она определяет размер человека и его рост. Также у нее есть специальный алгоритм который определяет вкусы человека на основе его странички в Вконтакте.</p></div>
+        <!--Team-->
+        <!--<div class="team block">
+          <div class="team__member team__member__video tmv1">
+            <img height="800px" width="800px" src="photo/Vova.png">
+          </div>
+          <div class="team__member team__member__text text tmt1"><p>Владимир Агишев</p></div>
+          <div class="team__member team__member__text text tmt2"><p>Егор Панин</p></div>
+          <div class="team__member team__member__video tmv2">
+            <<img height="800px" width="800px" src="photo/Egor.png">
+          </video>
+          </div>
+          <div class="team__member team__member__video tmv3">
+            <video loop autoplay muted controls><source>
+            </video>
+          </div>
+          <div class="team__member team__member__text text tmt3"><p>Константин Дегтярев</p></div>
+          <div class="team__member team__member__text text tmt4"><p>Копань Демид</p></div>
+          <div class="team__member team__member__video tmv4">
+            <video loop autoplay muted controls><source>
+            </video>
+          </div>
+        </div>-->
+        <!--E-mail--><!-- h=w=100% -->
+        <div   class="email block">
+          <div  class="email__video">
+            <video loop autoplay muted><source src="video/ТрубаСТекстом2.mp4">
+            </video>
+          </div>
+          <div id="DEmail"  class="email__text text"><p id="TEmail" style="padding-top: 280px; font-size: 40px;">Понравилось? Пишите: blackbird.matter@gmail.com</p></div>
+        </div>
+      </div>
+      <script src="js/button.js"></script>
+    </body>
+</html>
